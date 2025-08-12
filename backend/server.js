@@ -10,6 +10,10 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
+app.get("/", (req, res) => {
+  res.json({ message: "task-manager-app API is running" });
+}); // For test case 
+
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 
