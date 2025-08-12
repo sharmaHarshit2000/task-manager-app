@@ -1,0 +1,8 @@
+#frontend
+frontend/dist
+frontend/.env
+frontend/node_modules
+
+#backend
+backend/node_modules
+backend/.env
